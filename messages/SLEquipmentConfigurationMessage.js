@@ -100,7 +100,7 @@ exports.SLEquipmentConfigurationMessage = class SLEquipmentConfigurationMessage 
 
     let numPumps = 0;
     for (var i = 0; i < this.flowDataArray.length; i += 45) {
-      if (this.flowDataArray[i + 2] !== 0) {
+      if (this.flowDataArray[i] !== 0) {
         numPumps++;
       }
     }
